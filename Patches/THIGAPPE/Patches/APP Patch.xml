@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ApparelPaperPattern.ApparelPaperPatternDef[BodyType="Female"][IgnoreApparelDefs]</xpath> 
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/ApparelPaperPattern.ApparelPaperPatternDef[BodyType="Female"]/IgnoreApparelDefs</xpath>
+                    <value>
+                        <li>Maiddress</li>
+                        <li>Sailordress</li>
+                        <li>Schoolswimsuit</li>
+                        <li>Gothicdress</li>
+                        <li>Gowndress</li>
+                        <li>Hoodie</li>
+                        <li>Qipao</li>
+                        <li>ZA_Miko</li>
+                        <li>ZA_OL</li>
+                        <li>ZA_Maid_L</li>
+                        <li>ZA_Kimono</li>
+                        <li>ZA_Maidheaddress</li>
+                        <li>ZA_Blackbikini</li>
+                        <li>ZA_Maid_B</li>
+                    </value>
+                </match>
+    </Operation>
+
+	<Operation Class="PatchOperationConditional"> 
+		<xpath>Defs/ApparelPaperPattern.ApparelPaperPatternDef/IgnoreApparelDefs</xpath> 
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ApparelPaperPattern.ApparelPaperPatternDef/IgnoreApparelDefs</xpath>
+			<value>
+                        <li>Maiddress</li>
+                        <li>Sailordress</li>
+                        <li>Schoolswimsuit</li>
+                        <li>Gothicdress</li>
+                        <li>Gowndress</li>
+                        <li>Hoodie</li>
+                        <li>Qipao</li>
+                        <li>ZA_Miko</li>
+                        <li>ZA_OL</li>
+                        <li>ZA_Maid_L</li>
+                        <li>ZA_Kimono</li>
+                        <li>ZA_Maidheaddress</li>
+                        <li>ZA_Blackbikini</li>
+                        <li>ZA_Maid_B</li>
+            </value>
+		</match>
+	</Operation>
+
+</Patch>

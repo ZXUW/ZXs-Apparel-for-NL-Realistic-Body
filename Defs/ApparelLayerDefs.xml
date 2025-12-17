@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ApparelLayerDef>
+    <defName>LA_Layer_Onskin</defName>
+    <label>The Skin LA layer</label>
+    <drawOrder>-10</drawOrder>
+  </ApparelLayerDef>
+
+  <ApparelLayerDef>
+    <defName>LA_Layer_Outer</defName>
+    <label>The Outer LA layer</label>
+    <drawOrder>195</drawOrder>
+  </ApparelLayerDef>
+</Defs>

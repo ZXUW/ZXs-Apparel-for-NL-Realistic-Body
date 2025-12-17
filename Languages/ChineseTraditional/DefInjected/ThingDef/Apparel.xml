@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <Maiddress.label>女僕裝</Maiddress.label>
+  <Maiddress.description>基礎款的長裙女僕裝，胸前繃的有點緊。</Maiddress.description>
+  
+  <Sailordress.label>水手服</Sailordress.label>
+  <Sailordress.description>白色的水手服套装。</Sailordress.description>
+  
+  <Schoolswimsuit.label>學校泳裝</Schoolswimsuitdress.label>
+  <Schoolswimsuit.description>小時候的學校泳裝。是怎麼穿進去的？？</Schoolswimsuit.description>
+   
+  <Gothicdress.label>哥特長裙</Gothicdress.label>
+  <Gothicdress.description>哥特風格的黑色裙子。</Gothicdress.description>
+ 
+  <Gowndress.label>禮服裙</Gowndress.label>
+  <Gowndress.description>十分暴露的禮服長裙。</Gowndress.description>
+  
+  <Hoodie.label>連帽衫</Hoodie.label>
+  <Hoodie.description>連帽衫，想扯那個帶子。</Hoodie.description>
+  
+  <Qipao.label>旗袍</Qipao.label>
+  <Qipao.description>黑色旗袍，開衩很高。</Qipao.description>
+ 
+  <ZA_Miko.label>巫女服</ZA_Miko.label>
+  <ZA_Miko.description>不露腋的巫女服。</ZA_Miko.description>
+
+  <ZA_OL.label>OL套裝</ZA_OL.label>
+  <ZA_OL.description>OL套裝，只是社畜而已啦。</ZA_OL.description>
+
+  <ZA_Maid_L.label>女僕裝・月</ZA_Maid_L.label>
+  <ZA_Maid_L.description>公館的女僕裝，紅色領結。</ZA_Maid_L.description>
+
+  <ZA_Kimono.label>和服</ZA_Kimono.label>
+  <ZA_Kimono.description>黑色的櫻花和服。</ZA_Kimono.description>
+
+  <ZA_Maidheaddress.label>女僕頭飾</ZA_Maidheaddress.label>
+  <ZA_Maidheaddress.description>鑲有花邊的髮箍。</ZA_Maidheaddress.description>
+
+  <ZA_Blackbikini.label>黑色比基尼</ZA_Blackbikini.label>
+  <ZA_Blackbikini.description>黑色的比基尼泳裝。</ZA_Blackbikini.description>
+
+  <ZA_Maid_B.label>女僕裝・比基尼</ZA_Maid_B.label>
+  <ZA_Maid_B.description>比基尼女僕裝，非常的惡趣味。</ZA_Maid_B.description>
+</LanguageData>

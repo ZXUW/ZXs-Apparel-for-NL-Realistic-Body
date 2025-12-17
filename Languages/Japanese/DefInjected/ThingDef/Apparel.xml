@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <Maiddress.label>メイド服</Maiddress.label>
+  <Maiddress.description>ベーシックなロング丈のメイド服で、胸元がややきついです。</Maiddress.description>
+  
+  <Sailordress.label>セーラー服</Sailordress.label>
+  <Sailordress.description>白いセーラー服のセットです。</Sailordress.description>
+  
+  <Schoolswimsuit.label>スク水</Schoolswimsuit.label>
+  <Schoolswimsuit.description>スクール水着。どうやって着たの？</Schoolswimsuit.description>
+    
+  <Gothicdress.label>ゴシックスカート</Gothicdress.label>
+  <Gothicdress.description>ゴシックスタイルの黒いスカート。</Gothicdress.description>
+  
+  <Gowndress.label>夜会服</Gowndress.label>
+  <Gowndress.description>イブニング・ドレス、とても大胆なデザインです。</Gowndress.description>
+  
+  <Hoodie.label>パーカー</Hoodie.label>
+  <Hoodie.description>パーカーか…この紐、引っ張りたいな。</Hoodie.description>
+  
+  <Qipao.label>チャイナ・ドレス</Qipao.label>
+  <Qipao.description>黒のチャイナドレス (旗袍) 。スリットが高い。</Qipao.description>
+ 
+  <ZA_Miko.label>巫女服</ZA_Miko.label>
+  <ZA_Miko.description>腋を露出しない巫女服。</ZA_Miko.description>
+
+  <ZA_OL.label>OL套裝</ZA_OL.label>
+  <ZA_OL.description>OLスーツ、ただの社畜だし。</ZA_OL.description>
+
+  <ZA_Maid_L.label>メイド服・月</ZA_Maid_L.label>
+  <ZA_Maid_L.description>お屋敷のメイド服、赤いリボンタイ。</ZA_Maid_L.description>
+
+  <ZA_Kimono.label>和服</ZA_Kimono.label>
+  <ZA_Kimono.description>黒い桜柄の着物。</ZA_Kimono.description>
+
+  <ZA_Maidheaddress.label>メイドヘッドドレス</ZA_Maidheaddress.label>
+  <ZA_Maidheaddress.description>レースがあしらわれたカチューシャ。</ZA_Maidheaddress.description>
+
+  <ZA_Blackbikini.label>黒ビキニ</ZA_Blackbikini.label>
+  <ZA_Blackbikini.description>黒いビキニ水着。</ZA_Blackbikini.description>
+
+  <ZA_Maid_B.label>メイド服・ビキニ</ZA_Maid_B.label>
+  <ZA_Maid_B.description>ビキニのメイド服、エロすぎる。</ZA_Maid_B.description>
+</LanguageData>

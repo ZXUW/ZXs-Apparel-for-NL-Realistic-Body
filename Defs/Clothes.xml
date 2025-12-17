@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>ZX_Apparel_Category</defName>
+    <label>ZX Apparel</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+
+  <ThingDef Name="ZXApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <generateCommonality>0</generateCommonality>
+    <generateAllowChance>0</generateAllowChance>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Medieval</techLevel>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <onGroundRandomRotateAngle>10</onGroundRandomRotateAngle>
+    </graphicData>
+    <apparel>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+      <wearPerDay>0</wearPerDay>
+      <gender>Female</gender>
+      <shellRenderedBehindHead>true</shellRenderedBehindHead>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <tags>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
+        <li>RoyalTier5</li>
+        <li>RoyalTier6</li>
+        <li>RoyalTier7</li> 
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(1,1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+    <tradeTags>
+      <li>BasicClothing</li>
+      <li>Clothing</li>
+      <li>Armor</li>
+    </tradeTags>
+    <tickerType>Normal</tickerType>
+    <thingCategories Inherit="false">
+      <li>ZX_Apparel_Category</li>
+    </thingCategories>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <displayPriority>20</displayPriority>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+      </defaultIngredientFilter>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>Maiddress</defName>
+    <label>Maid dress</label>
+    <description>Maid dress</description>
+    <graphicData>
+      <texPath>Apparel/Maiddress</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>80</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>160</WorkToMake>
+      <Mass>1.5</Mass>
+      <ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.05</ArmorRating_Heat>
+      <Insulation_Cold>24</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/Maiddress</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Outer</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>Sailordress</defName>
+    <label>Sailor dress</label>
+    <description>Sailor dress</description>
+    <graphicData>
+      <texPath>Apparel/Sailordress</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>60</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>160</WorkToMake>
+      <Mass>0.8</Mass>
+      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.02</ArmorRating_Heat>
+      <Insulation_Cold>8</Insulation_Cold>
+      <Insulation_Heat>12</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/Sailordress</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Outer</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>Schoolswimsuit</defName>
+    <label>School swimsuit</label>
+    <description>School swimsuit</description>
+    <graphicData>
+      <texPath>Apparel/Schoolswimsuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>20</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>120</WorkToMake>
+      <Mass>0.1</Mass>
+      <ArmorRating_Sharp>0.005</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.005</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.01</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>
+      <Insulation_Heat>16</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/Schoolswimsuit</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Onskin</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>Gothicdress</defName>
+    <label>Gothic dress</label>
+    <description>Gothic dress</description>
+    <graphicData>
+      <texPath>Apparel/Gothicdress</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>90</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>180</WorkToMake>
+      <Mass>1.5</Mass>
+      <ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.05</ArmorRating_Heat>
+      <Insulation_Cold>24</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/Gothicdress</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Outer</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>Gowndress</defName>
+    <label>Gown dress</label>
+    <description>Gown dress?</description>
+    <graphicData>
+      <texPath>Apparel/Gowndress</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>45</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>180</WorkToMake>
+      <Mass>0.3</Mass>
+      <ArmorRating_Sharp>0.005</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.005</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.005</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/Gowndress</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Outer</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>Hoodie</defName>
+    <label>Hoodie</label>
+    <description>White Hoodie</description>
+    <graphicData>
+      <texPath>Apparel/Hoodie</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>30</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>80</WorkToMake>
+      <Mass>0.2</Mass>
+      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.01</ArmorRating_Heat>
+      <Insulation_Cold>10</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/Hoodie</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Outer</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>Qipao</defName>
+    <label>Qi pao</label>
+    <description>Chinese dress, or Cheongsam.</description>
+    <graphicData>
+      <texPath>Apparel/Qipao</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>45</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>200</WorkToMake>
+      <Mass>0.4</Mass>
+      <ArmorRating_Sharp>0.005</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.005</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.005</ArmorRating_Heat>
+      <Insulation_Cold>6</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/Qipao</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Outer</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>ZA_Miko</defName>
+    <label>Miko attire.</label>
+    <description>Miko attire</description>
+    <graphicData>
+      <texPath>Apparel/ZA_Miko</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>60</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>120</WorkToMake>
+      <Mass>1.3</Mass>
+      <ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.05</ArmorRating_Heat>
+      <Insulation_Cold>18</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/ZA_Miko</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Outer</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>ZA_OL</defName>
+    <label>OL suit</label>
+    <description>Office lady.</description>
+    <graphicData>
+      <texPath>Apparel/ZA_OL</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>60</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>130</WorkToMake>
+      <Mass>1.2</Mass>
+      <ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.05</ArmorRating_Heat>
+      <Insulation_Cold>16</Insulation_Cold>
+      <Insulation_Heat>6</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/ZA_OL</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Outer</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>ZA_Maid_L</defName>
+    <label>Maid dress Luna</label>
+    <description>Maid dress Luna</description>
+    <graphicData>
+      <texPath>Apparel/ZA_Maid_L</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>80</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>160</WorkToMake>
+      <Mass>1.5</Mass>
+      <ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.05</ArmorRating_Heat>
+      <Insulation_Cold>24</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/ZA_Maid_L</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Outer</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>ZA_Kimono</defName>
+    <label>Kimono</label>
+    <description>Kimono</description>
+    <graphicData>
+      <texPath>Apparel/ZA_Kimono</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>90</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>150</WorkToMake>
+      <Mass>1.4</Mass>
+      <ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.05</ArmorRating_Heat>
+      <Insulation_Cold>20</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/ZA_Kimono</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Outer</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>ZA_Maidheaddress</defName>
+    <label>Maid Headwear</label>
+    <description>Maid Headwear</description>
+    <graphicData>
+      <texPath>Apparel/ZA_Maidheaddress</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>10</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>60</WorkToMake>
+      <Mass>0.1</Mass>
+      <ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.05</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>
+      <Insulation_Heat>1</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/ZA_Maidheaddress</wornGraphicPath>
+      <layers>
+	<li>Overhead</li>
+      </layers>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>ZA_Blackbikini</defName>
+    <label>Black Bikini</label>
+    <description>Black Bikini</description>
+    <graphicData>
+      <texPath>Apparel/ZA_Blackbikini</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>20</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>120</WorkToMake>
+      <Mass>0.1</Mass>
+      <ArmorRating_Sharp>0.005</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.005</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.01</ArmorRating_Heat>
+      <Insulation_Cold>2</Insulation_Cold>
+      <Insulation_Heat>16</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/ZA_Blackbikini</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Onskin</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ZXApparelBase">
+    <defName>ZA_Maid_B</defName>
+    <label>Maid dress Bikini</label>
+    <description>Maid dress Bikini</description>
+    <graphicData>
+      <texPath>Apparel/ZA_Maid_B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costList>
+      <Cloth>80</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToMake>160</WorkToMake>
+      <Mass>1.5</Mass>
+      <ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.05</ArmorRating_Heat>
+      <Insulation_Cold>20</Insulation_Cold>
+      <Insulation_Heat>12</Insulation_Heat>
+      <Flammability>-1</Flammability>
+      <EquipDelay>1</EquipDelay>
+      <Beauty>16</Beauty>
+    </statBases>
+    <apparel>
+      <wornGraphicPath>Apparel/ZA_Maid_B</wornGraphicPath>
+      <layers>
+        <li>LA_Layer_Outer</li>
+      </layers>
+      <bodyPartGroups>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+    </apparel>
+  </ThingDef>
+</Defs>
